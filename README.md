@@ -128,6 +128,7 @@ agendamentos {
 }
 
 alunos ||--o{ agendamentos : "realiza"
+```
 
 ### Próximas melhorias 
 
