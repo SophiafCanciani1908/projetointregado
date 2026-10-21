@@ -16,7 +16,7 @@ alunos {
     string endereco
     string turma
     date data_nasc
-    string ativoS
+    string ativo
 }
 
 agendamentos {
