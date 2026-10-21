@@ -1,15 +1,15 @@
 # ProjetoIntegrado
-## 1. Projeto
+##  Projeto
 
-### 1.1. Objetivo
+###  Objetivo
 Esse projeto, da Girl Power é uma academia que é apenas para mulheres, para aquelas que não se sentem confortaveis treinando em públuco masculino. O objetivo foi facilitar o atendimento e agendamento de quem paga para treinar ou para quem pretender treinar, é um site seguro, e visualmente organizado para não ter nenhuma dificuldade, também tem a parte em que as mulheres podem ver qual equipamentos elas vão utilizar na musculação, e escolher qual personal elas se sentem mais confortaveis.
 
-### 1.2. Público
+###  Público
 - Alunas e clientes da academia Girl Power.
 - Personais Trainers e acompanhamento da agenda dos treinos. 
 ---
 
-## 2. Requisitos Funcionais (RF)
+##  Requisitos Funcionais (RF)
 
 Os requisitos funcionais são o que o sistema disponibiliza para os usuários:
 
@@ -34,7 +34,7 @@ Os requisitos funcionais são o que o sistema disponibiliza para os usuários:
   - A página de equipamentos deve exibir uma galeria organizada com as fotos, nomes e descrições dos aparelhos disponíveis na academia.
 ---
 
-## 3. Requisitos Não Funcionais (RNF)
+## Requisitos Não Funcionais (RNF)
 
 Os requisitos não funcionais define a estética, a organização e qualquer critério de uso:
 
@@ -57,7 +57,7 @@ Os requisitos não funcionais define a estética, a organização e qualquer cri
 
 ---
 
-## 4. Resumo 
+## Resumo 
 
 Durante o desenvolvimento da aplicação, foram realizadas as seguintes etapas e melhorias:
 
@@ -138,7 +138,7 @@ alunos ||--o{ agendamentos : "realiza"
 - Notificação no sistema: Mostrar uma mensagem de sucesso no topo da tela quando um agendamento for feito ou cancelado.
 
 
-## 5 Como Executar o Projeto
+## Como Executar o Projeto
 
 Para rodar este projeto na sua máquina, será necessário ter instalado um ambiente de servidor local (**PHP**) e o banco de dados **PostgreSQL**.
 ## Pré-requisitos
@@ -221,7 +221,7 @@ cd /var/www/html/projetointregado/
 psql -U postgres -d academiagirl -f backup.sql
 ```
 
-## 6 Organização de diretórios
+##  Organização de diretórios
 ```bash
 projeto-integrador/
 ├── app/
