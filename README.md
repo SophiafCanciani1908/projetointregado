@@ -245,3 +245,20 @@ projeto-integrador/
 ├── index.php                # Página inicial / Landing page
 └── backup_banco.sql         # Script de dump do banco de dados PostgreSQL
 ```
+
+# Briefing do Projeto
+*Contexto e Objetivo*
+O sistema da Academia Girl Power foi desenvolvido para resolver a falta de organização nos agendamentos da academia. Como o controle dos horários e dos treinos era feito de forma manual, isso gerava conflito de horários e dificultava o acompanhamento das alunas. O objetivo foi criar uma aplicação web simples onde a aluna consegue se cadastrar, fazer login e marcar o treino com o personal trainer direto pela tela.
+
+*Funcionalidades Principais*
+
+- Cadastro e Login: Área para a aluna criar a conta e acessar o sistema com segurança.
+
+- Agendamento de Treinos: Formulário para escolher o personal trainer e a data do treino.
+
+- Histórico e Cancelamento: Tabela que puxa os agendamentos direto do banco de dados com opção de excluir o registro se a aluna não puder ir.
+
+- Catálogo de Equipamentos: Página que mostra as fotos e a explicação dos aparelhos disponíveis no espaço.
+
+*Parte Técnica*
+A aplicação foi construída em PHP usando PDO para conectar no banco de dados PostgreSQL. A escolha dessa estrutura foi para manter o projeto leve e fácil de rodar no servidor local Apache, separando o código em pastas organizadas de conexão, funções e telas do sistema.
