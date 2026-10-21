@@ -248,6 +248,7 @@ projeto-integrador/
 
 # Briefing do Projeto
 *Contexto e Objetivo*
+
 O sistema da Academia Girl Power foi desenvolvido para resolver a falta de organização nos agendamentos da academia. Como o controle dos horários e dos treinos era feito de forma manual, isso gerava conflito de horários e dificultava o acompanhamento das alunas. O objetivo foi criar uma aplicação web simples onde a aluna consegue se cadastrar, fazer login e marcar o treino com o personal trainer direto pela tela.
 
 *Funcionalidades Principais*
@@ -261,4 +262,5 @@ O sistema da Academia Girl Power foi desenvolvido para resolver a falta de organ
 - Catálogo de Equipamentos: Página que mostra as fotos e a explicação dos aparelhos disponíveis no espaço.
 
 *Parte Técnica*
+
 A aplicação foi construída em PHP usando PDO para conectar no banco de dados PostgreSQL. A escolha dessa estrutura foi para manter o projeto leve e fácil de rodar no servidor local Apache, separando o código em pastas organizadas de conexão, funções e telas do sistema.
