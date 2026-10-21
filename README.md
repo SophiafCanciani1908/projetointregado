@@ -138,4 +138,85 @@ alunos ||--o{ agendamentos : "realiza"
 - Notificação no sistema: Mostrar uma mensagem de sucesso no topo da tela quando um agendamento for feito ou cancelado.
 
 
-   
+## 5 Como Executar o Projeto
+
+Para rodar este projeto na sua máquina, será necessário ter instalado um ambiente de servidor local (**PHP**) e o banco de dados **PostgreSQL**.
+## Pré-requisitos
+
+- PHP instalado e configurado;
+- PostgreSQL instalado e em execução;
+- Navegador web.
+
+### Passo a Passo
+
+#### Passo 01. Baixar o projeto em sua máquina
+
+- Copie a URL desse repositório
+```bash
+https://github.com/SophiafCanciani1908/projetointregado.git
+```
+- Abra o Terminal, Prompt de Comando ou Git Bash no seu computador e navegue até a pasta onde deseja salvar o projeto:
+```bash
+cd caminho/pasta_desejada
+```
+
+- Execute o git clone:
+```bash
+git clone https://github.com/SophiafCanciani1908/projetointregado.git
+```
+
+- Acesse a pasta:
+```bash
+cd projetointregado
+```
+
+#### Passo 2: Configurar o Banco de Dados
+Juntamente aos arquivos do projeto, você tem acesso ao dump do banco de dados `lumina.sql`, você usará ele neste momento. Siga as instruções abaixo:
+
+- Abra o Terminal, Prompt de Comando ou PowerShell.
+- Conecte-se ao PostgreSQL de acordo com seu sistema operacional:
+
+    - Linux/macOS (Terminal):
+    ```bash
+    sudo -u postgres psql
+    ```
+
+    - Windows (Prompt/PowerShell):
+    ```bash
+    psql -U postgres
+    ```
+
+- Crie o banco de dados `academiagirl`:
+```sql
+DROP DATABASE IF EXISTS academiagirl;
+CREATE DATABASE academiagirl;
+```
+
+- Crie o usuário lumina com senha:
+```bash
+CREATE USER postgres WITH PASSWORD 'SENAI@1908';
+```
+
+- Altere proprietário do database:
+```bash
+ALTER DATABASE academiagirl OWNER TO postgres;
+```
+
+- Verifique se tudo ocorreu bem (banco de dados e usuário criados)
+    - Verificação do banco de dados:
+```bash
+\l
+```
+- Saia do usuário postgres:
+```bash
+\q
+```
+- Entre, seguindo o caminho abaixo:
+```bash
+cd /var/www/html/projetointregado/
+```
+
+- Estando na raiz do projeto `(pasta projetointregado)`, restaure o banco de dados executando o seguinte comando:
+```bash
+psql -U postgres -d academiagirl -f backup.sql
+```
