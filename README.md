@@ -220,3 +220,28 @@ cd /var/www/html/projetointregado/
 ```bash
 psql -U postgres -d academiagirl -f backup.sql
 ```
+
+## 6 Organização de diretórios
+```bash
+projeto-integrador/
+├── app/
+│   ├── delete.php           # Lógica e confirmação para exclusão de agendamentos
+│   ├── equipamentos.php     # Exibição visual dos equipamentos da academia
+│   ├── select.php           # Consulta e relatórios simplificados
+│   ├── select_w.php         # Tabela principal de agendamentos e ações do CRUD
+│   └── update.php           # Formulário e processamento de agendamento/edição
+├── database/
+│   └── connect.php          # Conexão PDO com o banco de dados PostgreSQL
+├── imagens/                 # Recursos visuais e fotos dos equipamentos
+├── includes/
+│   ├── footer.php           # Rodapé padrão do site
+│   ├── functions.php        # Funções gerais de banco de dados e regras do CRUD
+│   └── header.php           # Cabecalho e menu de navegação principal
+├── login/
+│   ├── cadastrar.php        # Tela e processamento do cadastro de novas alunas
+│   ├── login.php            # Autenticação de usuários
+│   ├── logout.php           # Encerramento seguro da sessão
+│   └── verifica_user.php    # Middleware/Protetor de rotas autenticadas
+├── index.php                # Página inicial / Landing page
+└── backup_banco.sql         # Script de dump do banco de dados PostgreSQL
+```
