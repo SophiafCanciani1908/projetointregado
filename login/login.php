@@ -3,6 +3,7 @@
 if (session_status() === PHP_SESSION_NONE) { session_start(); }
 // pega as funções do sistema
 require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../database/connect.php';
 
 $erro = "";
 

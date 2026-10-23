@@ -71,37 +71,37 @@ require_once __DIR__ . '/../includes/functions.php';
         <div class="grid-equipamentos">
 <!-- Cartão de algum equipamento (com foto, nome e descrição do que faz) -->
             <div class="cartao-equipamento">
-                <img src="/imagens/Gemini_Generated_Image_29dh2s29dh2s29dh.jpg" alt="Esteira ergométrica">
+                <img src="/projetointregado/imagens/Gemini_Generated_Image_29dh2s29dh2s29dh.jpg" alt="Esteira ergométrica">
                 <h3>Esteira ergométrica</h3>
                 <p>O aparelho de cardio mais disputado e essencial para aquecimento e treinos aeróbicos.</p>
             </div>
 <!-- essa parte faz a mesma coisa para os outros aparelhos -->
             <div class="cartao-equipamento">
-                <img src="/imagens/Gemini_Generated_Image_3lnu513lnu513lnu.jpg" alt="Leg Press">
+                <img src="/projetointregado/imagens/Gemini_Generated_Image_3lnu513lnu513lnu.jpg" alt="Leg Press">
                 <h3>Leg Press</h3>
                 <p>O preferido e mais comum para o treino de pernas, por ser seguro e eficiente.</p>
             </div>
 
             <div class="cartao-equipamento">
-                <img src="/imagens/Gemini_Generated_Image_f1zhhjf1zhhjf1zh.jpg" alt="Puxada alta (Pulley)">
+                <img src="/projetointregado/imagens/Gemini_Generated_Image_f1zhhjf1zhhjf1zh.jpg" alt="Puxada alta (Pulley)">
                 <h3>Puxada alta (Pulley)</h3>
                 <p>O equipamento principal e mais frequentado para o treino de costas.</p>
             </div>
 
             <div class="cartao-equipamento">
-                <img src="/imagens/Gemini_Generated_Image_iz9pw0iz9pw0iz9p.jpg" alt="Banco regulável com halteres">
+                <img src="/projetointregado/imagens/Gemini_Generated_Image_iz9pw0iz9pw0iz9p.jpg" alt="Banco regulável com halteres">
                 <h3>Banco regulável com halteres</h3>
                 <p>A área de pesos livres mais utilizada, serve para peito, ombros, braços e pernas.</p>
             </div>
 
             <div class="cartao-equipamento">
-                <img src="/imagens/Gemini_Generated_Image_m0bxb8m0bxb8m0bx.jpg" alt="Cadeira extensora">
+                <img src="/projetointregado/imagens/Gemini_Generated_Image_m0bxb8m0bxb8m0bx.jpg" alt="Cadeira extensora">
                 <h3>Cadeira extensora</h3>
                 <p>Presente em 100% das academias para o isolamento das coxas.</p>
             </div>
 
             <div class="cartao-equipamento">
-                <img src="/imagens/Gemini_Generated_Image_y33j7ny33j7ny33j.jpg" alt="Cross Over (Polias)">
+                <img src="/projetointregado/imagens/Gemini_Generated_Image_y33j7ny33j7ny33j.jpg" alt="Cross Over (Polias)">
                 <h3>Cross Over (Polias)</h3>
                 <p>A máquina mais versátil do salão, usada para treinar o corpo inteiro.</p>
             </div>

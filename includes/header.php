@@ -69,10 +69,10 @@
 
     <nav class="nav-menu">
         <ul>
-            <li><a href="../app/select_w.php" class="nav-link">Início</a></li>
-            <li><a href="../app/equipamentos.php" class="nav-link">Equipamentos</a></li>
-            <li><a href="../app/update.php" class="nav-link">Agendar Personal</a></li>
-            <li><a href="../login/logout.php" class="btn-nav-sair">Sair</a></li>
+            <li><a href="/projetointregado/app/select_w.php" class="nav-link">Início</a></li>
+            <li><a href="/projetointregado/app/equipamentos.php" class="nav-link">Equipamentos</a></li>
+            <li><a href="/projetointregado/app/update.php" class="nav-link">Agendar Personal</a></li>
+            <li><a href="/projetointregado/login/logout.php" class="btn-nav-sair">Sair</a></li>
         </ul>
     </nav>
 </header>

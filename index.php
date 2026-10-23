@@ -31,8 +31,8 @@ if (session_status() === PHP_SESSION_NONE) {
                 <h2 style="color: #d63384; margin-top: 0;">Bem-vinda ao Girl Power!</h2>
                 <p style="color: #555; margin-bottom: 20px;">Aceda à tua conta ou regista-te para continuar.</p>
                 <div style="display: flex; gap: 10px; justify-content: center;">
-                    <a href="login/login.php" style="padding: 10px 20px; background-color: #d63384; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">Fazer Login</a>
-                    <a href="login/cadastrar.php" style="padding: 10px 20px; background-color: #851987; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">Criar Conta</a>
+                    <a href="/projetointregado/login/login.php" style="padding: 10px 20px; background-color: #d63384; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">Fazer Login</a>
+                    <a href="/projetointregado/login/cadastrar.php" style="padding: 10px 20px; background-color: #851987; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">Criar Conta</a>
                 </div>
             </div>
         <?php endif; ?>
