@@ -1,15 +1,15 @@
 # ProjetoIntegrado
-## 1. Projeto
+##  Projeto
 
-### 1.1. Objetivo
+###  Objetivo
 Esse projeto, da Girl Power é uma academia que é apenas para mulheres, para aquelas que não se sentem confortaveis treinando em públuco masculino. O objetivo foi facilitar o atendimento e agendamento de quem paga para treinar ou para quem pretender treinar, é um site seguro, e visualmente organizado para não ter nenhuma dificuldade, também tem a parte em que as mulheres podem ver qual equipamentos elas vão utilizar na musculação, e escolher qual personal elas se sentem mais confortaveis.
 
-### 1.2. Público
+###  Público
 - Alunas e clientes da academia Girl Power.
 - Personais Trainers e acompanhamento da agenda dos treinos. 
 ---
 
-## 2. Requisitos Funcionais (RF)
+##  Requisitos Funcionais (RF)
 
 Os requisitos funcionais são o que o sistema disponibiliza para os usuários:
 
@@ -34,7 +34,7 @@ Os requisitos funcionais são o que o sistema disponibiliza para os usuários:
   - A página de equipamentos deve exibir uma galeria organizada com as fotos, nomes e descrições dos aparelhos disponíveis na academia.
 ---
 
-## 3. Requisitos Não Funcionais (RNF)
+## Requisitos Não Funcionais (RNF)
 
 Os requisitos não funcionais define a estética, a organização e qualquer critério de uso:
 
@@ -57,7 +57,7 @@ Os requisitos não funcionais define a estética, a organização e qualquer cri
 
 ---
 
-## 4. Resumo 
+## Resumo 
 
 Durante o desenvolvimento da aplicação, foram realizadas as seguintes etapas e melhorias:
 
@@ -138,4 +138,129 @@ alunos ||--o{ agendamentos : "realiza"
 - Notificação no sistema: Mostrar uma mensagem de sucesso no topo da tela quando um agendamento for feito ou cancelado.
 
 
-   
+## Como Executar o Projeto
+
+Para rodar este projeto na sua máquina, será necessário ter instalado um ambiente de servidor local (**PHP**) e o banco de dados **PostgreSQL**.
+## Pré-requisitos
+
+- PHP instalado e configurado;
+- PostgreSQL instalado e em execução;
+- Navegador web.
+
+### Passo a Passo
+
+#### Passo 01. Baixar o projeto em sua máquina
+
+- Copie a URL desse repositório
+```bash
+https://github.com/SophiafCanciani1908/projetointregado.git
+```
+- Abra o Terminal, Prompt de Comando ou Git Bash no seu computador e navegue até a pasta onde deseja salvar o projeto:
+```bash
+cd caminho/pasta_desejada
+```
+
+- Execute o git clone:
+```bash
+git clone https://github.com/SophiafCanciani1908/projetointregado.git
+```
+
+- Acesse a pasta:
+```bash
+cd projetointregado
+```
+
+#### Passo 2: Configurar o Banco de Dados
+Juntamente aos arquivos do projeto, você tem acesso ao dump do banco de dados `lumina.sql`, você usará ele neste momento. Siga as instruções abaixo:
+
+- Abra o Terminal, Prompt de Comando ou PowerShell.
+- Conecte-se ao PostgreSQL de acordo com seu sistema operacional:
+
+    - Linux/macOS (Terminal):
+    ```bash
+    sudo -u postgres psql
+    ```
+
+    - Windows (Prompt/PowerShell):
+    ```bash
+    psql -U postgres
+    ```
+
+- Crie o banco de dados `academiagirl`:
+```sql
+DROP DATABASE IF EXISTS academiagirl;
+CREATE DATABASE academiagirl;
+```
+
+- Crie o usuário lumina com senha:
+```bash
+CREATE USER postgres WITH PASSWORD 'SENAI@1908';
+```
+
+- Altere proprietário do database:
+```bash
+ALTER DATABASE academiagirl OWNER TO postgres;
+```
+
+- Verifique se tudo ocorreu bem (banco de dados e usuário criados)
+    - Verificação do banco de dados:
+```bash
+\l
+```
+- Saia do usuário postgres:
+```bash
+\q
+```
+- Entre, seguindo o caminho abaixo:
+```bash
+cd /var/www/html/projetointregado/
+```
+
+- Estando na raiz do projeto `(pasta projetointregado)`, restaure o banco de dados executando o seguinte comando:
+```bash
+psql -U postgres -d academiagirl -f backup.sql
+```
+
+##  Organização de diretórios
+```bash
+projeto-integrador/
+├── app/
+│   ├── delete.php           # Lógica e confirmação para exclusão de agendamentos
+│   ├── equipamentos.php     # Exibição visual dos equipamentos da academia
+│   ├── select.php           # Consulta e relatórios simplificados
+│   ├── select_w.php         # Tabela principal de agendamentos e ações do CRUD
+│   └── update.php           # Formulário e processamento de agendamento/edição
+├── database/
+│   └── connect.php          # Conexão PDO com o banco de dados PostgreSQL
+├── imagens/                 # Recursos visuais e fotos dos equipamentos
+├── includes/
+│   ├── footer.php           # Rodapé padrão do site
+│   ├── functions.php        # Funções gerais de banco de dados e regras do CRUD
+│   └── header.php           # Cabecalho e menu de navegação principal
+├── login/
+│   ├── cadastrar.php        # Tela e processamento do cadastro de novas alunas
+│   ├── login.php            # Autenticação de usuários
+│   ├── logout.php           # Encerramento seguro da sessão
+│   └── verifica_user.php    # Middleware/Protetor de rotas autenticadas
+├── index.php                # Página inicial / Landing page
+└── backup_banco.sql         # Script de dump do banco de dados PostgreSQL
+```
+
+# Briefing do Projeto
+*Contexto e Objetivo*
+
+O sistema da Academia Girl Power foi desenvolvido para resolver a falta de organização nos agendamentos da academia. Como o controle dos horários e dos treinos era feito de forma manual, isso gerava conflito de horários e dificultava o acompanhamento das alunas. O objetivo foi criar uma aplicação web simples onde a aluna consegue se cadastrar, fazer login e marcar o treino com o personal trainer direto pela tela.
+
+*Funcionalidades Principais*
+
+- Cadastro e Login: Área para a aluna criar a conta e acessar o sistema com segurança.
+
+- Agendamento de Treinos: Formulário para escolher o personal trainer e a data do treino.
+
+- Histórico e Cancelamento: Tabela que puxa os agendamentos direto do banco de dados com opção de excluir o registro se a aluna não puder ir.
+
+- Catálogo de Equipamentos: Página que mostra as fotos e a explicação dos aparelhos disponíveis no espaço.
+
+*Parte Técnica*
+
+A aplicação foi construída em PHP usando PDO para conectar no banco de dados PostgreSQL. A escolha dessa estrutura foi para manter o projeto leve e fácil de rodar no servidor local Apache, separando o código em pastas organizadas de conexão, funções e telas do sistema.
