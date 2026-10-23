@@ -169,7 +169,6 @@ git clone https://github.com/SophiafCanciani1908/projetointregado.git
 ```bash
 cd projetointregado
 ```
-
 #### Passo 2: Configurar o Banco de Dados
 Juntamente aos arquivos do projeto, você tem acesso ao dump do banco de dados `lumina.sql`, você usará ele neste momento. Siga as instruções abaixo:
 
@@ -264,3 +263,11 @@ O sistema da Academia Girl Power foi desenvolvido para resolver a falta de organ
 *Parte Técnica*
 
 A aplicação foi construída em PHP usando PDO para conectar no banco de dados PostgreSQL. A escolha dessa estrutura foi para manter o projeto leve e fácil de rodar no servidor local Apache, separando o código em pastas organizadas de conexão, funções e telas do sistema.
+
+# Prototipagem
+<img width="1517" height="693" alt="Captura de tela 2026-10-23 100144" src="https://github.com/user-attachments/assets/fe70178b-33da-47af-bd1a-11db22f14076" />
+
+# Dicionário de Dados
+
+<img width="1196" height="529" alt="Captura de tela 2026-10-23 100114" src="https://github.com/user-attachments/assets/961828da-1ebb-4076-b404-7ab29e9f6378" />
+
